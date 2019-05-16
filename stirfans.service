@@ -1,0 +1,13 @@
+# copy this file to /lib/systemd/system/
+
+[Unit]
+Description=NodeJS CT50 Fan Stirrer
+After=network-online.target
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/opt/stirfans/
+ExecStart=/usr/bin/node /opt/stirfans/stir.js
+
+[Install]
+WantedBy=multi-user.target
