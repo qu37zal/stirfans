@@ -4,7 +4,8 @@
   "description": "stirs ct50 fans on a schedule",
   "main": "stir.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node stir.js",
+    "deploy": "cp * /opt/stirfans"
   },
   "author": "",
   "license": "ISC",
